@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="ja">
+
+
+{% extends "layoutK.html" %}
+{% block content %}
+        <div class="container text-center bg-light">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- 見出しと説明 -->                
+                    <h1 class="display-1">犬猫判別アプリ</h1>            
+                    <h3>~AIが写真に写っている動物が犬か猫か判別します~</h3>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-12">                
+                    <form class="form-inline" method="post" enctype="multipart/form-data">                    
+                        <label for="exampleInputFile" style="font-size:20px;">画像を選んで下さい</label>                   
+                        <!-- 画像選択 -->                    
+                        <input type="file" name="file" style="margin-top:20px;">                                        
+                        <!-- 送信ボタン -->                    
+                        <button type="submit" class="btn btn-default" style="margin-top:20px;">送信</button>                
+                    </form>
+                </div>
+            </div>
+{% endblock %}

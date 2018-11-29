@@ -1,0 +1,10 @@
+body {
+    background-image: url('./cat-and-dog-493633_960_720.png');
+    /* background-repeat: no-repeat; */
+    background-position: center center;
+    background-size: cover;
+}
+
+.row{
+    padding:50px;
+}

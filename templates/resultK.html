@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="ja">
+
+
+{% extends "layoutK.html" %}
+{% block content %}
+  <!-- Form
+  ================================================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+<!-- 判定結果 -->
+<a class='head_a'  href=''>戻る</a>
+<div class="row">
+  <div class="col-md-12">
+  <h3>画像を送信後↓に結果が表示されます</h3>
+  {% if pred_animal == 0 %}
+  <h2>この動物は 犬 で、犬度 {{score}} %です。</h2>
+  {% elif pred_animal == 1 %}
+  <h2>この動物は 猫 で、猫度 {{score}} %です。</h2>
+  {% endif %}                
+</div>
+</div>
+{% endblock %}
